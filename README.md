@@ -5,12 +5,12 @@ The [Heroku toolbelt](https://toolbelt.heroku.com) is required for next steps.
 
 To deploy to Heroku, create an application:
 ```
-$ heroku apps:create --region eu
+$ heroku apps:create --addons cleardb:ignite --region eu
 ```
 
 Optionnaly, you can specify an application name:
 ```
-$ heroku apps:create --region eu awesome-app
+$ heroku apps:create --addons cleardb:ignite --region eu awesome-app
 ```
 This will make your app available from `http://awesome-app.herokuapp.com`.
 
@@ -19,6 +19,12 @@ For the application to work in the right environment (ie. "prod"), add an
 environment variable in the Heroku application:
 ```
 $ heroku config:set SYMFONY_ENV=prod
+```
+
+For the application to be able to access the MySQL database, we need to copy the
+`CLEARDDB_DATABASE_URL` to the `DATABASE_URL` environment variable:
+```
+$ heroku config:set `heroku config --shell | grep CLEARDB_DATABASE_URL | sed -e 's/^CLEARDB_//'`
 ```
 
 Then you just need to push your code on Heroku:

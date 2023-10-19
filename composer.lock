@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "hash": "2380a3e17fc4a21d0443e6e21f741b55",
+    "content-hash": "7f902c9fb9b9c00ae431f33650f34dff",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -72,20 +72,20 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2014-12-18 18:30:08"
+            "time": "2014-12-18T18:30:08+00:00"
         },
         {
             "name": "doctrine/cache",
-            "version": "v1.3.1",
+            "version": "v1.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "cf483685798a72c93bf4206e3dd6358ea07d64e7"
+                "reference": "47cdc76ceb95cc591d9c79a36dc3794975b5d136"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/cf483685798a72c93bf4206e3dd6358ea07d64e7",
-                "reference": "cf483685798a72c93bf4206e3dd6358ea07d64e7",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/47cdc76ceb95cc591d9c79a36dc3794975b5d136",
+                "reference": "47cdc76ceb95cc591d9c79a36dc3794975b5d136",
                 "shasum": ""
             },
             "require": {
@@ -96,17 +96,18 @@
             },
             "require-dev": {
                 "phpunit/phpunit": ">=3.7",
+                "predis/predis": "~1.0",
                 "satooshi/php-coveralls": "~0.6"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.4.x-dev"
+                    "dev-master": "1.5.x-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Doctrine\\Common\\Cache\\": "lib/"
+                "psr-4": {
+                    "Doctrine\\Common\\Cache\\": "lib/Doctrine/Common/Cache"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -141,7 +142,11 @@
                 "cache",
                 "caching"
             ],
-            "time": "2014-09-17 14:24:04"
+            "support": {
+                "issues": "https://github.com/doctrine/cache/issues",
+                "source": "https://github.com/doctrine/cache/tree/1.5.x"
+            },
+            "time": "2015-12-19T05:03:47+00:00"
         },
         {
             "name": "doctrine/collections",
@@ -209,7 +214,7 @@
                 "collections",
                 "iterator"
             ],
-            "time": "2014-02-03 23:07:43"
+            "time": "2014-02-03T23:07:43+00:00"
         },
         {
             "name": "doctrine/common",
@@ -287,7 +292,7 @@
                 "persistence",
                 "spl"
             ],
-            "time": "2014-05-21 19:28:51"
+            "time": "2014-05-21T19:28:51+00:00"
         },
         {
             "name": "doctrine/dbal",
@@ -358,7 +363,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2014-12-04 21:57:15"
+            "time": "2014-12-04T21:57:15+00:00"
         },
         {
             "name": "doctrine/doctrine-bundle",
@@ -437,7 +442,7 @@
                 "orm",
                 "persistence"
             ],
-            "time": "2014-11-28 08:32:03"
+            "time": "2014-11-28T08:32:03+00:00"
         },
         {
             "name": "doctrine/doctrine-cache-bundle",
@@ -521,7 +526,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2014-11-28 09:43:36"
+            "time": "2014-11-28T09:43:36+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -585,7 +590,7 @@
                 "singuarlize",
                 "string"
             ],
-            "time": "2013-01-10 21:49:15"
+            "time": "2013-01-10T21:49:15+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -637,7 +642,7 @@
                 "lexer",
                 "parser"
             ],
-            "time": "2013-01-12 18:59:04"
+            "time": "2013-01-12T18:59:04+00:00"
         },
         {
             "name": "doctrine/orm",
@@ -710,7 +715,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2014-12-16 13:45:01"
+            "time": "2014-12-16T13:45:01+00:00"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -762,7 +767,7 @@
             "keywords": [
                 "parameters management"
             ],
-            "time": "2013-12-07 10:10:39"
+            "time": "2013-12-07T10:10:39+00:00"
         },
         {
             "name": "jdorn/sql-formatter",
@@ -812,7 +817,7 @@
                 "highlight",
                 "sql"
             ],
-            "time": "2014-01-12 16:20:24"
+            "time": "2014-01-12T16:20:24+00:00"
         },
         {
             "name": "kriswallsmith/assetic",
@@ -886,7 +891,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2014-12-12 05:04:05"
+            "time": "2014-12-12T05:04:05+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -958,7 +963,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2014-09-30 13:30:58"
+            "time": "2014-09-30T13:30:58+00:00"
         },
         {
             "name": "psr/log",
@@ -996,7 +1001,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2012-12-21 11:40:51"
+            "time": "2012-12-21T11:40:51+00:00"
         },
         {
             "name": "sensio/distribution-bundle",
@@ -1049,7 +1054,7 @@
                 "configuration",
                 "distribution"
             ],
-            "time": "2014-12-17 06:40:12"
+            "time": "2014-12-17T06:40:12+00:00"
         },
         {
             "name": "sensio/framework-extra-bundle",
@@ -1104,7 +1109,7 @@
                 "annotations",
                 "controllers"
             ],
-            "time": "2014-12-02 09:52:52"
+            "time": "2014-12-02T09:52:52+00:00"
         },
         {
             "name": "sensiolabs/security-checker",
@@ -1149,7 +1154,7 @@
                 }
             ],
             "description": "A security checker for your composer.lock",
-            "time": "2014-07-19 10:52:35"
+            "time": "2014-07-19T10:52:35+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1201,7 +1206,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2014-12-05 14:17:14"
+            "time": "2014-12-05T14:17:14+00:00"
         },
         {
             "name": "symfony/assetic-bundle",
@@ -1265,7 +1270,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2014-10-15 12:03:38"
+            "time": "2014-10-15T12:03:38+00:00"
         },
         {
             "name": "symfony/monolog-bundle",
@@ -1324,7 +1329,7 @@
                 "log",
                 "logging"
             ],
-            "time": "2014-07-21 00:36:06"
+            "time": "2014-07-21T00:36:06+00:00"
         },
         {
             "name": "symfony/swiftmailer-bundle",
@@ -1381,7 +1386,7 @@
             ],
             "description": "Symfony SwiftmailerBundle",
             "homepage": "http://symfony.com",
-            "time": "2014-12-01 17:44:50"
+            "time": "2014-12-01T17:44:50+00:00"
         },
         {
             "name": "symfony/symfony",
@@ -1497,7 +1502,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2014-12-03 16:40:43"
+            "time": "2014-12-03T16:40:43+00:00"
         },
         {
             "name": "twig/extensions",
@@ -1549,7 +1554,7 @@
                 "i18n",
                 "text"
             ],
-            "time": "2014-10-30 14:30:03"
+            "time": "2014-10-30T14:30:03+00:00"
         },
         {
             "name": "twig/twig",
@@ -1606,7 +1611,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2014-10-17 12:53:44"
+            "time": "2014-10-17T12:53:44+00:00"
         }
     ],
     "packages-dev": [
@@ -1656,15 +1661,17 @@
                 }
             ],
             "description": "This bundle generates code for you",
-            "time": "2014-12-07 18:30:52"
+            "time": "2014-12-07T18:30:52+00:00"
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],
     "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": {
         "php": ">=5.3.3"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
 }
